@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obliczanie rozmiaru ramy</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script>
+
+        function mnozenie()
+        {
+            var a = document.getElementById("a").value;   
+            a = parseFloat(a);
+            
+            var mnozenie = Math.round((a * 0.57) / 2.54) ;document.
+            getElementById("wynik").innerHTML=mnozenie;    
+        }
+        
+        function mnozenie1()
+        {
+            var a = document.getElementById("a").value;   
+            a = parseFloat(a);
+        
+            var mnozenie1 = Math.round((a * 0.66) / 2.54);document.
+            getElementById("wynik").innerHTML=mnozenie1;    
+        }
+
+        function mnozenie2()
+        {
+            var a = document.getElementById("a").value;   
+            a = parseFloat(a);
+            
+            var mnozenie2 = Math.round((a * 0.63) / 2.54);document.
+            getElementById("wynik").innerHTML=mnozenie2;    
+        }
+        
+</script>
+</head>
+<body>
+    <h3>
+    <p1><strong>Kalkulator rozmiaru ramy</strong></p1>
+    <p>Podaj długość nogawki (cm) </p>
+    <input type="text" value="0" id="a">
+    
+    <p>
+    <p>Wybierz rodzaj roweru</p>
+
+    <input type="button" value="górski" onclick="mnozenie()">
+    <input type="button" value="szosowy" onclick="mnozenie1()">
+    <input type="button" value="trekkingowy" onclick="mnozenie2()"> </p>
+   <p> <div id="wynik">Tu pojawi się wynik (cale) </div> </p> </h3>
+    
+    
+</body>
+</html>
+
